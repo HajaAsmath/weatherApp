@@ -6,11 +6,13 @@ html body {
     background: url('/Users/hasma00/Documents/JSOdin/weatherApp/src/background.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #search-container {
     background-color: rgb(0, 0, 0, 0.5);
-    text-align: center;
+    /* text-align: center; */
     padding: 20px;
 }
 
@@ -54,12 +56,14 @@ html body {
 
 
 #main-container {
-    margin-top: 100px;
+    position: relative;
 }
 
 #info-area {
-    max-width: 550px;
-    height: 550px;
+    position: absolute;
+    top : 8vh; bottom: 0px; left: 0px; right: 0px;
+    width: 500px;
+    height: 500px;
     background-color: rgb(0, 0, 0, 0.5);
     border-radius: 50%;
     margin: 0 auto;
@@ -156,12 +160,68 @@ html body {
     text-align: center;
 }
 
-#weather-icon{
-    background: url('http://openweathermap.org/img/wn/01n@2x.png') no-repeat;
+/* #weather-icon{
+    background: url('http://openweathermap.org/img/wn/01d@2x.png') no-repeat;
     height: 100px;
+    width: 100px;
+} */
+
+#forecast {
+    position: absolute;
+    bottom: 0px;
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 10% 90%;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+
+#forecast-options {
+    text-align: center;
+}
+
+#forecast-options > span {
+    cursor: pointer;
+}
+
+#forecast-options > label {
+    border-bottom: 1px solid white;
+    display: block;
+    margin: 20px;
     width: 100px;
 }
 
+@media only screen and (max-width: 800px) {
+    #forecast-options > label {
+        width: 50px;
+    }
+}
+
+#hourly {
+    opacity: 0.5;
+}
+
+#forecast-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.list > * {
+    margin-bottom: 10px;
+}
+
+.list{
+    text-align: center;
+}
+
+.material-icons {
+    cursor: pointer;
+}
 /* #border {
     width: 400px;
     height: 400px;

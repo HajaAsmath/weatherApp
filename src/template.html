@@ -8,11 +8,13 @@
   <body>
       <header>
           <form id="search-container">
-              <input id='location' type="text" autocomplete="off" required>
-              <label>Search Location</label>
-              <span id='search' class="material-icons">
-                search
-              </span>
+              <div>
+                <input id='location' type="text" autocomplete="off" required>
+                <label>Search Location</label>
+                <span id='search' class="material-icons">
+                  search
+                </span>
+              </div>
           </form>
       </header>
       <div id="main-container">
@@ -31,7 +33,9 @@
               <span>12:10</span>
             </div>
             <div id="cont-5">
+              <div><span>United Arab Emirates</span></div>
               <div id='weather-icon'>
+                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather"/>
               </div>
               <span id="whether-desc">Clear sky</span>
             </div>
@@ -49,5 +53,70 @@
             </div>
           </div>
       </div>
+      <footer id="forecast">
+        <div id="forecast-options">
+          <span id="daily">Daily</span>
+          <label></label>
+          <span id="hourly">Hourly</span>
+        </div>
+        <div id="forecast-list">
+          <span class="material-icons">
+            keyboard_arrow_left
+          </span>
+          <div class="list">
+            <div id="icon1">
+              <img src="http://openweathermap.org/img/wn/04d.png" alt="Weather icon"/>
+            </div>
+            <div><span>Now</span></div>
+            <div><span>80&#xb0;</span><span class="metric">C</span></div>
+          </div>
+          <div class="list">
+            <div id="icon1">
+              <img src="http://openweathermap.org/img/wn/04d.png" alt="Weather icon"/>
+            </div>
+            <div><span>Now</span></div>
+            <div><span>80&#xb0;</span><span class="metric">C</span></div>
+          </div>
+          <div class="list">
+            <div id="icon1">
+              <img src="http://openweathermap.org/img/wn/04d.png" alt="Weather icon"/>
+            </div>
+            <div><span>Now</span></div>
+            <div><span>80&#xb0;</span><span class="metric">C</span></div>
+          </div>
+          <div class="list">
+            <div id="icon1">
+              <img src="http://openweathermap.org/img/wn/04d.png" alt="Weather icon"/>
+            </div>
+            <div><span>Now</span></div>
+            <div><span>80&#xb0;</span><span class="metric">C</span></div>
+          </div>
+          <div class="list">
+            <div id="icon1">
+              <img src="http://openweathermap.org/img/wn/04d.png" alt="Weather icon"/>
+            </div>
+            <div><span>Now</span></div>
+            <div><span>80&#xb0;</span><span class="metric">C</span></div>
+          </div>
+          <div class="list">
+            <div id="icon1">
+              <img src="http://openweathermap.org/img/wn/04d.png" alt="Weather icon"/>
+            </div>
+            <div><span>Now</span></div>
+            <div><span>80&#xb0;</span><span class="metric">C</span></div>
+          </div>
+          <div class="list">
+            <div id="icon1">
+              <img src="http://openweathermap.org/img/wn/04d.png" alt="Weather icon"/>
+            </div>
+            <div><span>Now</span></div>
+            <div><span>80&#xb0;</span><span class="metric">C</span></div>
+          </div>
+          <span class="material-icons">
+            keyboard_arrow_right
+          </span>
+        </div>
+        
+      </footer>
   </body>
 </html>
