@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    main: ['./src/index.js'],
+    main: ['./src/index.js', './src/apiService/weatherApiService.js'],
   },
   devtool: 'inline-source-map',
   plugins: [
