@@ -19,17 +19,4 @@ async function getWeatherData(lat, lon) {
   return { current, hourly, daily };
 }
 
-async function encryptAndSendMessage() {
-  // const publicKey  = fetch('http://localhost:3000/getPublicKey').then(res => res.json());
-  const headers = new Headers();
-  headers.append('Origin', 'http://localhost:3000');
-  const publicKey = await fetch('http://localhost:3000/getPublicKey', {
-    mode: 'no-cors',
-    credentials: 'include',
-    method: 'GET',
-  }).then((res) => res.json());
-  console.log(publicKey);
-}
-
-encryptAndSendMessage();
 export default { getGeoCodeData, getWeatherData };
